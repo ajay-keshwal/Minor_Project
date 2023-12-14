@@ -1,0 +1,150 @@
+*{
+
+    padding:0;
+    margin: 0;
+    /* font-family: 'Noto Serif Vithkuqi', serif; */
+    font-family: 'Ruwudu', serif;
+    
+  }
+  .main_box{
+  
+    background-image: url(a.jpg);
+    background-size: cover;
+    height: 100vh;
+  
+  
+  
+  
+  }
+  .main_box #check{
+  
+    display: none;
+  }
+  .main_box .btn_one{
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    top:15px;
+    height: 10px;
+    width: 60px;
+    /* transition:all 0.1s; */
+    
+    
+  }
+  .main_box .btn_one i{
+    transition:all 0.4s ease;
+    /* transform: scale(1.1); */
+
+
+    /* height: 5px; */
+  }
+  .main_box .btn_two{
+  
+    position:absolute;
+    left: 280px;
+    top:10px;
+    font-size:20px;
+    transition:all 1s;
+  
+    /* text-replace: ; */
+  }
+  .main_box .sidebar_menu{
+  
+    position: absolute;
+    top: 0px;
+    height:100vh;
+    background-color: #0007;
+    width: 300px;
+    font-size: 20px;
+    left:-300px;
+  
+  
+  }
+  .sidebar_menu .logo{
+    position:absolute;
+    left:25%;
+    top:15px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 0 10px #fff9;
+    padding:5px  30px;
+    /* width: 50px; */
+  }
+  .sidebar_menu .logo a{
+    text-decoration: none;
+    color: #FFF;
+  
+  }
+  .main_box .menu {
+    position:absolute;
+    top:100px;
+    left: 40px;
+    line-height: 50px;
+    width: 70%;
+    
+  }
+  .main_box .menu li{
+    
+    padding-left: 10px;
+  }
+  .main_box .menu a{
+    color:#FFF;
+    margin:10px;
+    text-decoration: none;
+    font-weight: 500;
+    
+  }
+  .social_media ul {
+    position: absolute;
+    bottom: 30px;
+    /* top:5px; */
+    left: 30%;
+    height: 60px;
+    width: 150px;
+  
+    
+  }
+  
+  
+  .social_media ul i{
+    margin: 5px;
+    /* position: :absolute; */
+    /* padding: 5px; */
+    color: azure;
+    opacity: 0.5;
+    transition: all 0.5s;
+    top: 20px;
+  
+  }
+  .menu  li:hover{
+    
+    transition: all 0.7s ;
+    box-shadow: 0 0 10px #fffe;
+    
+  }
+  #check:checked ~ .sidebar_menu {
+    left:0;
+  }
+  #check:checked ~ .btn_one{
+    opacity: 0;
+  }
+  .btn_one i:hover{
+    /* font-size: 35px; */
+    
+    cursor: pointer;
+    
+    transform: scale(1.1);
+    /* box-shadow: 2px 2px 5px black; */
+  }
+  .btn_two i:hover{
+  
+   cursor: pointer;
+    /* font-size: 25px; */
+    transition:all 0.5s;
+    transform: scale(1.2);
+  }
+  .social_media i:hover{
+    opacity: 1;
+    /* font-size: 22px; */
+    transform: scale(1.1);
+  }
